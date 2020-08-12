@@ -6,4 +6,6 @@ services:
     ports:
       - 80:8080
     volumes:
-      - ./jenkins_home:/var/lib/jenkins_home
+      - ./jenkins_home:/var/jenkins_home
+    stdin_open: true
+    tty: true
