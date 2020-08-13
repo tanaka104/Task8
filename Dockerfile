@@ -1,11 +1,20 @@
+#
+# Jenkins for production operations.
+#
+# usage:
+#   docker build -t darwin/jenkins-operation .
+#   docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v `pwd`/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --name jenkins-operation darwin/jenkins-operation
+#
+
 FROM jenkins/jenkins:latest
-# install via apt
+
+# using root.
 USER root
 
 # install jenkins plugins
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
-RUN chown -R 1000:1000 /var/jenkins_home
-RUN chmod -R 777 /var/jenkins_home
 
-USER jenkins
+# setup local environment.
+RUN apk upgrade --update && \
+    apk add --no-cache --update docker curl
