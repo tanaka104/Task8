@@ -17,7 +17,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>curl https://www.ap-com.co.jp &gt;&gt; APCWEB_`date +%Y%m%d`.txt &amp;&amp; mv APCWEB_`date +%Y%m%d`.txt Exportfile</command>
+      <command>curl https://www.ap-com.co.jp &gt;&gt; APCWEB_`date +%Y%m%d`.txt &amp;&amp; mkdir -p Exportfile ; mv APCWEB_`date +%Y%m%d`.txt Exportfile</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
