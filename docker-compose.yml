@@ -8,4 +8,4 @@ services:
       - "50000:50000"
     volumes:
       - ./jenkins_home:/var/jenkins_home
-      - ./Exportfile:/var/jenkins_home/jobs/viewHP/workspace/Exportfile
+      - ./Exportfile:/var/jenkins_home/jobs/viewHP_APC/workspace/Exportfile
