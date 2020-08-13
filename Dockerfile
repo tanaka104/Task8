@@ -6,7 +6,7 @@
 #   docker run -d -v /var/run/docker.sock:/var/run/docker.sock -v `pwd`/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --name jenkins-operation darwin/jenkins-operation
 #
 
-FROM jenkins/jenkins:latest
+FROM jenkins:2.60.3-alpine
 
 # using root.
 USER root
