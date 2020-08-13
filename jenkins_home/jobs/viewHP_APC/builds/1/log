@@ -1,0 +1,9 @@
+Started by user [8mha:////4G8Gr3ONgjMGbrLabOGhammkPtJXKM+5Nu6DYRXAqF+4AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xIJkALOlciK+AAAA[0mapc
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/viewHP_APC/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins6848801369667440938.sh
++ date +%Y%m%d
+/tmp/jenkins6848801369667440938.sh: 2: /tmp/jenkins6848801369667440938.sh: cannot create Exportfile/APCWEB_20200813.txt: Directory nonexistent
++ curl https://www.ap-com.co.jp
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
